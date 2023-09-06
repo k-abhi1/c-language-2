@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>pointer</h1>
+    <br>
+    <P>variables are also known as address data types because they are used to store the address of another variable.
+        The address is the memory location that is assigned to the variable. It doesn’t store any value.
+
+        Hence, there are only a few operations that are allowed to perform on Pointers in C language. The operations are
+        slightly different from the ones that we generally use for mathematical calculations. The operations are:
+        <u1>
+            <li> Increment/Decrement of a Pointer
+            <li> Addition of integer to a pointer
+            <li>Subtraction of integer to a pointer
+            <li> Subtracting two pointers of the same type
+            <li>Comparison of pointers of the same type.
+            <li> Increment/Decrement of a Pointer
+        </u1>
+        <br>
+
+        Increment: It is a condition that also comes under addition. When a pointer is incremented, it actually
+        increments by the number equal to the size of the data type for which it is a pointer.
+    </P>
+
+    <br>
+    <h3>ex:-</h3>
+    <p>#include stdio.h>
+            <p> // pointer increment and decrement
+            <p> //pointers are incremented and decremented by the size of the data type they point to
+            <p> int main()
+            <p> {
+            <p> int a = 22;
+            <p> int *p = &a;
+            <p> printf("p = %u\n", p); // p = 6422288
+            <p> p++;
+            <p> printf("p++ = %u\n", p); //p++ = 6422292 +4 // 4 bytes
+            <p> p--;
+            <p> printf("p-- = %u\n", p); //p-- = 6422288 -4 // restored to original value
+
+            <p> float b = 22.22;
+            <p> float *q = &b;
+            <p> printf("q = %u\n", q); //q = 6422284
+            <p> q++;
+            <p> printf("q++ = %u\n", q); //q++ = 6422288 +4 // 4 bytes
+            <p> q--;
+            <p> printf("q-- = %u\n", q); //q-- = 6422284 -4 // restored to original value
+
+            <p>char c = 'a';
+            <p> char *r = &c;
+            <p> printf("r = %u\n", r); //r = 6422283
+            <p> r++;
+            <p> printf("r++ = %u\n", r); //r++ = 6422284 +1 // 1 byte
+            <p>r--;
+            <p> printf("r-- = %u\n", r); //r-- = 6422283 -1 // restored to original value
+
+            <p> return 0;
+            <p> }
+            <h1>Output</h1>
+            <p> p = 1441900792
+            <p> p++ = 1441900796
+            <p> p-- = 1441900792
+            <p> q = 1441900796
+            <p> q++ = 1441900800
+            <p> q-- = 1441900796
+            <p> r = 1441900791
+            <p> r++ = 1441900792
+            <p> r-- = 1441900791
+            <p> Addition
+
+            <p> When a pointer is added with a value, the value is first multiplied by the size of data type and then
+                added to the pointer.</p>
+</body>
+
+</html>
