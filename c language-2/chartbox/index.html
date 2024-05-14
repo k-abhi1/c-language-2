@@ -1,0 +1,42 @@
+ <!-- chart boat  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chart|boat</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        input{
+            border-radius: 10px;
+        }
+        button{
+            border-radius: 10px;
+           background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <input type="text">
+    <button>submit</button>
+
+    <script>
+        const box = document.querySelector('.box');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click',()=>{
+            box.innerHTML = input.value;
+        })
+    </script>
+    
+</body>
+</html>
