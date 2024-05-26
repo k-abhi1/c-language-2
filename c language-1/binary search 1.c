@@ -9,7 +9,7 @@ int binarySearch(int array[], int x, int low, int high) {
 
     if (array[mid] == x)
       return mid;
-
+        
     if (array[mid] < x)
       low = mid + 1;
 

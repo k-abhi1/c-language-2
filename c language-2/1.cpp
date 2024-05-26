@@ -11,9 +11,10 @@ class Complex {
     public:
         // Default parameterized constructor
         Complex(float r = 0.0, float i = 0.0) {
-            real = r;
+            real = r;   //.        
             imag = i;
         }
+//
 
         // Overload the '+' operator
         Complex operator+(Complex &c) {
