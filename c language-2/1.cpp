@@ -16,13 +16,14 @@ class Complex {
         }
 //
 
-        // Overload the '+' operator
+        // Overload the '+' operator   
         Complex operator+(Complex &c) {
             Complex temp;
             temp.real = real + c.real;
             temp.imag = imag + c.imag;
             return temp;
         }
+        //     
 
         // Function to display the complex number
         void display() {
