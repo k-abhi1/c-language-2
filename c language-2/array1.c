@@ -18,6 +18,8 @@
 //     printf("%d\n",array[i]);
 //    }
 // }
+
+// second qustion 
 #include<stdio.h>
 
 int main (){
