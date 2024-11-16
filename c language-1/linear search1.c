@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 
 int main(){
   int list[100],size,i,sElement;
